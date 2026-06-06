@@ -12,11 +12,13 @@
       <a href="#home">
         <div class="nav-logo">WA</div>
       </a>
-      <div class="nav-items">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#project">PROJECT</a>
-        <a href="#contact">CONTACT</a>
+      <div class="nav-container">
+        <div class="nav-items">
+          <a href="#home" class="nav-item">HOME</a>
+          <a href="#about" class="nav-item">ABOUT</a>
+          <a href="#project" class="nav-item">PROJECT</a>
+          <a href="#contact" class="nav-item">CONTACT</a>
+        </div>
       </div>
     </nav>
     <!-- HOME -->
@@ -71,7 +73,9 @@
       </div>
       <div class="project-card">
         <div class="project-thumb">
-          <div class="project-thumb-label"></div>
+          <div class="project-thumb-label">
+            <img src="image/Screenshot 2026-06-05 225201.png" alt="" />
+          </div>
           <div class="project-thumb-num">01</div>
         </div>
         <div class="project-body">
@@ -87,6 +91,7 @@
             operations, MySQL database, and a responsive Bootstrap frontend.
           </div>
           <div class="project-footer">
+            <div></div>
             <a href="" class="arrow">
               <button class="project-arrow">→</button>
             </a>
@@ -95,7 +100,9 @@
       </div>
       <div class="project-card">
         <div class="project-thumb">
-          <div class="project-thumb-label"><img src="" alt="" /></div>
+          <div class="project-thumb-label">
+            <img src="./image/Screenshot 2026-06-05 225017.png" alt="" />
+          </div>
           <div class="project-thumb-num">02</div>
         </div>
         <div class="project-body">
@@ -110,6 +117,7 @@
             operations, MySQL database, and a responsive Bootstrap frontend.
           </div>
           <div class="project-footer">
+            <div></div>
             <a href="" class="arrow">
               <button class="project-arrow">→</button>
             </a>
@@ -123,36 +131,75 @@
         <div class="section-label-text">CONTACT</div>
         <div class="section-label-line"></div>
       </div>
-      <div class="contact-card">
-        <div class="contact-title">LET'S <br />CONNECT</div>
-        <div class="form-card">
-          <form action="">
-            <label for="">NAME</label>
-            <input type="text" placeholder="Your name" />
-            <input type="email" placeholder="EMAIL" />
-            <input type="text" />
-            <button>SEND MESSAGE</button>
-          </form>
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form-wrap">
+          <div class="contact-form-title">LET'S CONNECT</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">NAME</label>
+              <input class="form-input" type="text" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">EMAIL</label>
+              <input
+                class="form-input"
+                type="email"
+                placeholder="your@email.com"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">MESSAGE</label>
+            <textarea
+              class="form-textarea"
+              placeholder="Tell me about your project..."
+            ></textarea>
+          </div>
+          <button class="form-submit">SEND MESSAGE</button>
         </div>
-      </div>
-      <div class="info-card">
-        <div class="info-title"></div>
-        <div class="phone"></div>
-        <div class="email"></div>
-        <div class="location"></div>
-        <div class="socials">
-          <h5>connect on social</h5>
-          <div>
+
+        <!-- Info -->
+        <div class="contact-info">
+          <div class="contact-info-header">CONTACT INFO</div>
+          <div class="info-item">
+            <div>
+              <div class="info-label">PHONE</div>
+              <div class="info-value">+251 951 968 887</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div>
+              <div class="info-label">EMAIL</div>
+              <div class="info-value">walidabdulkadir37@gmail.com</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div>
+              <div class="info-label">LOCATION</div>
+              <div class="info-value">Addis Ababa, Ethiopia</div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <div class="contact-socials-label">CONNECT ON SOCIAL</div>
             <div class="media-btn">
               <a href="" class="link">
                 <i class="bx bxl-instagram-alt">#L</i></a
               >
               <a href="" class="link"> <i class="bx bxl-youtube"></i>#I</a>
               <a href="" class="link"> <i class="bx bxl-telegram"></i>#T</a>
+              <a href="" class="link"> <i class="bx bxl-telegram"></i>#G</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <footer>
+      <div class="footer-logo">WALID.DEV</div>
+      <div>© 2025 WALID ABDULKADIR · ALL RIGHTS RESERVED</div>
+      <div>BUILT WITH HTML · CSS · JS</div>
+    </footer>
   </body>
 </html>
