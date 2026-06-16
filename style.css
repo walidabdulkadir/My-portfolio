@@ -83,7 +83,11 @@ a {
   transition: var(--transition);
 }
 
-button {
+button,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   font-family: var(--font-mono);
   font-weight: 700;
@@ -94,16 +98,20 @@ button {
   color: var(--button-text);
   border: 1px solid transparent;
   letter-spacing: 0.1em;
+  text-decoration: none;
   transition: var(--transition);
 }
 
-button:hover {
+button:hover,
+.btn:hover {
   background-color: var(--teal-dark);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px var(--teal-light);
+  color: var(--button-text);
 }
 
-button:active {
+button:active,
+.btn:active {
   transform: translateY(0);
 }
 
@@ -348,7 +356,8 @@ nav {
 /* Skills Ticker */
 .ticker {
   background-color: var(--teal-light);
-  border-y: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   overflow: hidden;
   padding: 18px 0;
   white-space: nowrap;
@@ -418,7 +427,6 @@ nav {
 }
 
 .resume {
-  display: inline-block;
   margin-top: 1rem;
 }
 
