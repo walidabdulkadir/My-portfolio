@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Walid Abdulkadir - Fullstack Developer</title>
+    <!-- Boxicons CSS for icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Local Stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,68 +17,100 @@
       </a>
       <div class="nav-container">
         <div class="nav-items">
-          <a href="#home" class="nav-item">HOME</a>
+          <a href="#home" class="nav-item active">HOME</a>
           <a href="#about" class="nav-item">ABOUT</a>
-          <a href="#project" class="nav-item">PROJECT</a>
+          <a href="#project" class="nav-item">PROJECTS</a>
           <a href="#contact" class="nav-item">CONTACT</a>
         </div>
       </div>
-      <div></div>
+      <div class="theme-toggle-wrap">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bx bx-sun"></i>
+        </button>
+      </div>
     </nav>
+
     <!-- HOME -->
-    <section id="home">
+    <section id="home" class="reveal">
       <div class="home-container">
         <div class="home-detail">
           <h2>
             HI, I'M
             <br />
-
-            <div class="dev-name">WALID ABDULKADIR</div>
+            <span class="dev-name">WALID ABDULKADIR</span>
           </h2>
-          <div class="role"><strong>FULLSTACK DEVELOPER</strong></div>
-          <br />
-
+          <div class="role">FULLSTACK DEVELOPER</div>
+          
           <div class="para">
-            I build <strong>clean, fast, and purposeful </strong> software —
-            from backend systems to pixel-perfect interfaces.passionate about
-            leveraging technology to solve real world problems
+            I build <strong>clean, fast, and purposeful</strong> software —
+            from backend systems to pixel-perfect interfaces. Passionate about
+            leveraging technology to solve real world problems.
           </div>
 
           <div class="home-btns">
-            <a href="#github">
-              <button class="home-btn">GITHUB</button>
-            </a>
-
             <a href="#contact">
               <button class="home-btn">CONTACT ME →</button>
             </a>
+            <a href="https://github.com" target="_blank">
+              <button class="home-btn home-btn-secondary">GITHUB</button>
+            </a>
           </div>
           <div class="media-btn">
-            <a href="" class="link"> <i class="bx bxl-instagram-alt">#L</i></a>
-            <a href="" class="link"> <i class="bx bxl-youtube"></i>#I</a>
-            <a href="" class="link"> <i class="bx bxl-telegram"></i>#T</a>
+            <a href="https://instagram.com" target="_blank" class="link" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" class="link" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
+            <a href="https://telegram.org" target="_blank" class="link" aria-label="Telegram"><i class="bx bxl-telegram"></i></a>
+            <a href="https://github.com" target="_blank" class="link" aria-label="GitHub"><i class="bx bxl-github"></i></a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- TICKER -->
+    <div class="ticker">
+      <div class="ticker-track">
+        <span class="ticker-item"><i class="bx bxl-javascript"></i> JAVASCRIPT</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxl-nodejs"></i> NODE.JS</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxl-express"></i> EXPRESS</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxl-html5"></i> HTML5</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxl-css3"></i> CSS3</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxs-data"></i> SQL</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxl-bootstrap"></i> BOOTSTRAP</span>
+        <span class="ticker-dot">·</span>
+        <!-- Duplicate for ticker loop -->
+        <span class="ticker-item"><i class="bx bxl-javascript"></i> JAVASCRIPT</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxl-nodejs"></i> NODE.JS</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxl-express"></i> EXPRESS</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxl-html5"></i> HTML5</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxl-css3"></i> CSS3</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxs-data"></i> SQL</span>
+        <span class="ticker-dot">·</span>
+        <span class="ticker-item"><i class="bx bxl-bootstrap"></i> BOOTSTRAP</span>
+        <span class="ticker-dot">·</span>
+      </div>
+    </div>
+
     <!-- ABOUT -->
-    <section id="about">
+    <section id="about" class="reveal">
       <div class="section-label">
         <div class="section-label-text">ABOUT ME</div>
         <div class="section-label-line"></div>
       </div>
-      <div class="">
+      <div class="about-content">
         <h2>WHO AM I ?</h2>
         <p>
-          I'm Walid Abdulkadir, a Computer Science student at WCU, Ethiopia,
+          I'm Walid Abdulkadir, a Computer Science student at WCU, Ethiopia, with a passion for building web applications that solve real problems. I specialize in full-stack development — from database design to polished user interfaces.
         </p>
-        <br />
-        <p>
-          with a passion for building web applications that solve real problems.
-          I specialize in full-stack development — from database design to
-          polished user interfaces.
-        </p>
-        <br />
         <p>
           Beyond coding, I run
           <strong>GEBEYA Printing &amp; Advertising PLC</strong> and constantly
@@ -83,116 +118,114 @@
           writing clean code, designing thoughtful systems, and shipping work
           that matters.
         </p>
-        <br />
-        <p>
-          with a passion for building web applications that solve real problems.
-          I specialize in full-stack development — from database design to
-          polished user interfaces.
-        </p>
-        <br />
-        <a href="resume" class="resume">
-          <button>DOWNLOAD RESUME</button>
+        <a href="#contact" class="resume">
+          <button>VIEW RESUME</button>
         </a>
       </div>
     </section>
+
     <!-- PROJECT -->
-    <section id="project">
+    <section id="project" class="reveal">
       <div class="section-label">
-        <div class="section-label-text">PROJECT</div>
+        <div class="section-label-text">PROJECTS</div>
         <div class="section-label-line"></div>
       </div>
-      <div class="project-card">
-        <div class="project-thumb">
-          <div class="project-thumb-label">
-            <img src="image/Screenshot 2026-06-05 225201.png" alt="" />
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <div class="project-thumb-num">01</div>
+            <img src="image/Screenshot 2026-06-05 225201.png" alt="Student Management System Screenshot" />
           </div>
-          <div class="project-thumb-num">01</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <div class="project-tag">NODE.JS</div>
+              <div class="project-tag">MYSQL</div>
+              <div class="project-tag">EXPRESS</div>
+              <div class="project-tag">BOOTSTRAP</div>
+            </div>
+            <div class="project-title">Student Management System</div>
+            <div class="project-desc">
+              A full-stack web application for managing student records with CRUD
+              operations, MySQL database, and a responsive Bootstrap frontend.
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com" target="_blank" class="arrow" aria-label="View on GitHub">
+                <div class="project-arrow">→</div>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="project-body">
-          <div class="project-tags">
-            <div class="project-tag">NODE.JS</div>
-            <div class="project-tag">MYSQL</div>
-            <div class="project-tag">EXPRESS</div>
-            <div class="project-tag">BOOTSTRAP</div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <div class="project-thumb-num">02</div>
+            <img src="./image/Screenshot 2026-06-05 225017.png" alt="Weather App Screenshot" />
           </div>
-          <div class="project-title">Student Management System</div>
-          <div class="project-desc">
-            A full-stack web application for managing student records with CRUD
-            operations, MySQL database, and a responsive Bootstrap frontend.
-          </div>
-          <div class="project-footer">
-            <div></div>
-            <a href="" class="arrow">
-              <div class="project-arrow">→</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb">
-          <div class="project-thumb-label">
-            <img src="./image/Screenshot 2026-06-05 225017.png" alt="" />
-          </div>
-          <div class="project-thumb-num">02</div>
-        </div>
-        <div class="project-body">
-          <div class="project-tags">
-            <div class="project-tag">HTML</div>
-            <div class="project-tag">CSS</div>
-            <div class="project-tag">JAVASCRIPT</div>
-          </div>
-          <div class="project-title">WEATHER APP</div>
-          <div class="project-desc">
-            A full-stack web application for managing student records with CRUD
-            operations, MySQL database, and a responsive Bootstrap frontend.
-          </div>
-          <div class="project-footer">
-            <div></div>
-            <a href="" class="arrow">
-              <div class="project-arrow">→</div>
-            </a>
+          <div class="project-body">
+            <div class="project-tags">
+              <div class="project-tag">HTML5</div>
+              <div class="project-tag">CSS3</div>
+              <div class="project-tag">JAVASCRIPT</div>
+              <div class="project-tag">REST API</div>
+            </div>
+            <div class="project-title">WEATHER APP</div>
+            <div class="project-desc">
+              A modern, interactive weather application that fetches real-time meteorological data from a web API, featuring detailed daily forecasts, dynamic search, and clean atmospheric styling.
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com" target="_blank" class="arrow" aria-label="View on GitHub">
+                <div class="project-arrow">→</div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- CONTACT -->
-    <section id="contact">
+    <section id="contact" class="reveal">
       <div class="section-label">
         <div class="section-label-text">CONTACT</div>
         <div class="section-label-line"></div>
       </div>
       <div class="contact-grid">
         <!-- Form -->
-        <div class="contact-form-wrap">
+        <form id="contact-form" class="contact-form-wrap" onsubmit="return false;">
           <div class="contact-form-title">LET'S CONNECT</div>
           <div class="form-row">
             <div class="form-group">
-              <label class="form-label">NAME</label>
-              <input class="form-input" type="text" placeholder="Your name" />
+              <label class="form-label" for="contact-name">NAME</label>
+              <input class="form-input" id="contact-name" type="text" placeholder="Your name" required />
             </div>
             <div class="form-group">
-              <label class="form-label">EMAIL</label>
+              <label class="form-label" for="contact-email">EMAIL</label>
               <input
                 class="form-input"
+                id="contact-email"
                 type="email"
                 placeholder="your@email.com"
+                required
               />
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label">MESSAGE</label>
+            <label class="form-label" for="contact-message">MESSAGE</label>
             <textarea
               class="form-textarea"
+              id="contact-message"
               placeholder="Tell me about your project..."
+              required
             ></textarea>
           </div>
-          <button class="form-submit">SEND MESSAGE</button>
-        </div>
+          <button class="form-submit" type="submit" id="form-submit">SEND MESSAGE</button>
+        </form>
 
         <!-- Info -->
         <div class="contact-info">
           <div class="contact-info-header">CONTACT INFO</div>
           <div class="info-item">
+            <i class="bx bx-phone"></i>
             <div>
               <div class="info-label">PHONE</div>
               <div class="info-value">+251 951 968 887</div>
@@ -200,12 +233,14 @@
           </div>
 
           <div class="info-item">
+            <i class="bx bx-envelope"></i>
             <div>
               <div class="info-label">EMAIL</div>
               <div class="info-value">walidabdulkadir37@gmail.com</div>
             </div>
           </div>
           <div class="info-item">
+            <i class="bx bx-map"></i>
             <div>
               <div class="info-label">LOCATION</div>
               <div class="info-value">Addis Ababa, Ethiopia</div>
@@ -215,21 +250,32 @@
           <div class="contact-socials">
             <div class="contact-socials-label">CONNECT ON SOCIAL</div>
             <div class="media-btn">
-              <a href="" class="link">
-                <i class="bx bxl-instagram-alt">#L</i></a
-              >
-              <a href="" class="link"> <i class="bx bxl-youtube"></i>#I</a>
-              <a href="" class="link"> <i class="bx bxl-telegram"></i>#T</a>
-              <a href="" class="link"> <i class="bx bxl-telegram"></i>#G</a>
+              <a href="https://instagram.com" target="_blank" class="link" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://youtube.com" target="_blank" class="link" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
+              <a href="https://telegram.org" target="_blank" class="link" aria-label="Telegram"><i class="bx bxl-telegram"></i></a>
+              <a href="https://github.com" target="_blank" class="link" aria-label="GitHub"><i class="bx bxl-github"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
     <footer>
       <div class="footer-logo">WALID.DEV</div>
-      <div>© 2025 WALID ABDULKADIR · ALL RIGHTS RESERVED</div>
-      <div>BUILT WITH HTML · CSS · JS</div>
+      <div>© 2026 WALID ABDULKADIR · ALL RIGHTS RESERVED</div>
+      <div>BUILT WITH HTML5 · CSS3 · JS</div>
     </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+      <div class="toast-content">
+        <i class="bx bx-check-circle toast-icon"></i>
+        <div class="toast-message">Message sent successfully!</div>
+      </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
   </body>
 </html>
