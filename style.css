@@ -23,10 +23,10 @@
   --nav-bg: rgba(9, 13, 22, 0.85);
   --shadow: rgba(0, 0, 0, 0.4);
   --button-text: #090d16;
-  
+
   --font-mono: "Space Mono", monospace;
   --font-sans: "Outfit", sans-serif;
-  
+
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -151,7 +151,9 @@ section:first-of-type {
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 .reveal.active {
@@ -224,7 +226,8 @@ nav {
   transition: var(--transition);
 }
 
-.nav-item:hover, .nav-item.active {
+.nav-item:hover,
+.nav-item.active {
   color: var(--text);
   background-color: var(--teal-light);
 }
@@ -720,7 +723,7 @@ footer {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: var(--card-bg);
+  background: rgba(90, 170, 155, 0.2);
   border: 1px solid var(--teal);
   box-shadow: 0 8px 30px rgba(90, 170, 155, 0.2);
   border-radius: 8px;
@@ -765,24 +768,24 @@ footer {
   section {
     padding: 80px 1.5rem 60px;
   }
-  
+
   section:first-of-type {
     padding-top: 120px;
   }
-  
+
   .home-detail h2 {
     font-size: 3rem;
   }
-  
+
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   nav {
     padding: 0 1.5rem;
   }
-  
+
   footer {
     flex-direction: column;
     gap: 15px;
@@ -795,21 +798,22 @@ footer {
   .nav-items {
     display: none; /* We will collapse details or let them scroll */
   }
-  
+
   /* We can create a simpler nav pill scroll or just keep Logo & Toggle */
   nav {
     justify-content: space-between;
   }
-  
+
   .home-btns {
     flex-direction: column;
     width: 100%;
   }
-  
-  .home-btns a, .home-btns button {
+
+  .home-btns a,
+  .home-btns button {
     width: 100%;
   }
-  
+
   .form-row {
     grid-template-columns: 1fr;
     gap: 0;
